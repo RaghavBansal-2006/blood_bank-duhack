@@ -18,9 +18,10 @@
         }
 
         header {
+            text-align: center;
             background-color: #ff6f61;
             color: #ffffff;
-            padding: 1.5rem 0;
+            padding: 2rem 0;
         }
 
         header h1 {
@@ -56,7 +57,7 @@
         }
 
         .container {
-            width: 80%;
+            width: 70%;
             margin: 0 auto;
         }
 
@@ -83,7 +84,7 @@
         .donor-registration-form label {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
-            color: #ffffff;
+            color: #ff6f61;
         }
 
         .donor-registration-form input,
@@ -130,10 +131,10 @@
     <section class="donor-registration-form">
         <h2>Fill in your details to become a donor</h2>
         <form action="process-donor-registration.php" method="post">
-            <label for="name">Full Name:</label>
+            <label for="name"><b>Full Name:</b></label>
             <input type="text" id="name" name="name" required>
 
-            <label for="blood-type">Blood Type:</label>
+            <label for="blood-type"><b>Blood Type:</b></label>
             <select id="blood-type" name="blood-type" required>
                 <option value=""></option>
                 <option value="A">A</option>
@@ -142,19 +143,19 @@
                 <option value="O">O</option>
             </select>
 
-            <label for="email">Email:</label>
+            <label for="email"><b>Email:</b></label>
             <input type="email" id="email" name="email" required>
 
-            <label for="address">Address:</label>
+            <label for="address"><b>Address:</b></label>
             <input type="text" id="address" name="address">
 
-            <label for="phone">Phone Number:</label>
+            <label for="phone"><b>Phone Number:</b></label>
             <input type="tel" id="phone" name="phone">
 
-            <label for="profile-picture">Profile Picture:</label>
+            <label for="profile-picture"><b>Profile Picture:</b></label>
             <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
 
-            <button type="submit">Submit</button>
+            <button type="submit"><b>Submit</b></button>
         </form>
     </section>
 </main>
